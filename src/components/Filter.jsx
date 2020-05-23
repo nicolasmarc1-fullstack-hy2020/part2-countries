@@ -6,7 +6,7 @@ const Filter = ({ handleSearch  }) => {
     setSearchInput(e.target.value)
     handleSearch(e.target.value)
   }
-  console.log(filterInput)
+
 
   
 
