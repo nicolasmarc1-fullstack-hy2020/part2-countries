@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+//  start app by typing this (with your apii key) in terminal: REACT_APP_API_KEY= your_api_key_from_https://weatherstack.com npm start
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

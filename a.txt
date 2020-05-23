@@ -1,0 +1,137 @@
+https://restcountries.eu/rest/v2/all
+[
+  {
+    name: "France",
+    topLevelDomain: [
+    ".fr"
+    ],
+    alpha2Code: "FR",
+    alpha3Code: "FRA",
+    callingCodes: [
+    "33"
+    ],
+    capital: "Paris",
+    altSpellings: [
+    "FR",
+    "French Republic",
+    "République française"
+    ],
+    region: "Europe",
+    subregion: "Western Europe",
+    population: 66710000,
+    latlng: [
+    46,
+    2
+    ],
+    demonym: "French",
+    area: 640679,
+    gini: 32.7,
+    timezones: [
+    "UTC-10:00",
+    "UTC-09:30",
+    "UTC-09:00",
+    "UTC-08:00",
+    "UTC-04:00",
+    "UTC-03:00",
+    "UTC+01:00",
+    "UTC+03:00",
+    "UTC+04:00",
+    "UTC+05:00",
+    "UTC+11:00",
+    "UTC+12:00"
+    ],
+    borders: [
+    "AND",
+    "BEL",
+    "DEU",
+    "ITA",
+    "LUX",
+    "MCO",
+    "ESP",
+    "CHE"
+    ],
+    nativeName: "France",
+    numericCode: "250",
+    currencies: [
+    {
+    code: "EUR",
+    name: "Euro",
+    symbol: "€"
+    }
+    ],
+    languages: [
+    {
+    iso639_1: "fr",
+    iso639_2: "fra",
+    name: "French",
+    nativeName: "français"
+    }
+    ],
+    translations: {
+    de: "Frankreich",
+    es: "Francia",
+    fr: "France",
+    ja: "フランス",
+    it: "Francia",
+    br: "França",
+    pt: "França",
+    nl: "Frankrijk",
+    hr: "Francuska",
+    fa: "فرانسه"
+    },
+    flag: "https://restcountries.eu/data/fra.svg",
+    regionalBlocs: [
+    {
+    acronym: "EU",
+    name: "European Union",
+    otherAcronyms: [ ],
+    otherNames: [ ]
+    }
+    ],
+    cioc: "FRA"
+  }
+]
+
+
+
+{
+  request: {
+  type: "City",
+  query: "Paris, France",
+  language: "en",
+  unit: "m"
+  },
+  location: {
+  name: "Paris",
+  country: "France",
+  region: "Ile-de-France",
+  lat: "48.867",
+  lon: "2.333",
+  timezone_id: "Europe/Paris",
+  localtime: "2020-05-23 17:58",
+  localtime_epoch: 1590256680,
+  utc_offset: "2.0"
+  },
+  current: {
+  observation_time: "03:58 PM",
+  temperature: 20,
+  weather_code: 116,
+  weather_icons: [
+  "https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0002_sunny_intervals.png"
+  ],
+  weather_descriptions: [
+  "Partly cloudy"
+  ],
+  wind_speed: 22,
+  wind_degree: 290,
+  wind_dir: "WNW",
+  pressure: 1028,
+  precip: 0.1,
+  humidity: 37,
+  cloudcover: 75,
+  feelslike: 20,
+  uv_index: 6,
+  visibility: 10,
+  is_day: "yes"
+  }
+}

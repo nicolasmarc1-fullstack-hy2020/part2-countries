@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react'
 import './App.css';
+import CountriesSearch from './components/CountriesSearch';
+import countryService from './services/countryService'
+
 
 function App() {
+
+  // fetch countries data, cache data in local storage, display loading screen before showing Country Search app
+  const [countries, setCountries] = useState(null)
+
+  useEffect(() => {
+    const fetchCountries = async () => {
+      const countries = await countryService.getAll()
+      setCountries(countries)
+      window.localStorage.setItem("countries-cache", JSON.stringify(countries))
+    }
+    const cachedCountries = JSON.parse(window.localStorage.getItem("countries-cache"))
+    if (cachedCountries) {
+      setCountries(cachedCountries)
+    }
+    else {
+      fetchCountries()
+    }
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    < >
+      {countries ? <CountriesSearch countries={countries} /> : <div >Loading    </div>}
+    </>
   );
 }
 
