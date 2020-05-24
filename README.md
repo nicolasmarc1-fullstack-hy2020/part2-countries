@@ -1,3 +1,11 @@
+# Start project
+
+Create an api key at https://weatherstack.com
+
+Install dependencies: npm install
+
+Start app by typing this (with your apii key) in terminal: REACT_APP_API_KEY= your_api_key_from_https://weatherstack.com npm start
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
